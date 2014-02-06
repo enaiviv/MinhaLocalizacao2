@@ -154,6 +154,15 @@
     }];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setToolbarHidden:NO animated:YES];
+    [super viewWillAppear:animated];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setToolbarHidden:YES animated:YES];
+    [super viewWillDisappear:animated];
+}
+
 
 - (IBAction)ActionMap:(id)sender {
     switch (OptionMap.selectedSegmentIndex) {
