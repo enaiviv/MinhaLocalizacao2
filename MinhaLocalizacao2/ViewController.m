@@ -134,7 +134,7 @@
     
     toquelongoMapa.minimumPressDuration = 0.3;
     [mapView addGestureRecognizer:toquelongoMapa];
-
+    
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)search
@@ -164,6 +164,7 @@
 }
 
 
+
 - (IBAction)ActionMap:(id)sender {
     switch (OptionMap.selectedSegmentIndex) {
         case 0:
@@ -179,5 +180,8 @@
         default:
             break;
     }
+}
+
+- (IBAction)ActionPageControl:(id)sender {
 }
 @end

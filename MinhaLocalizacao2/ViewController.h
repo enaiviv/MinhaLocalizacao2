@@ -10,7 +10,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
+@interface ViewController : UIViewController <CLLocationManagerDelegate, UISearchBarDelegate, UISearchDisplayDelegate, UIScrollViewDelegate>
+
 
 {
     __weak IBOutlet MKMapView *mapView;
@@ -22,6 +23,7 @@
     __weak IBOutlet UISegmentedControl *OptionMap;
     
     __weak IBOutlet UISearchBar *search;
+        
 }
 
 - (IBAction)ActionMap:(id)sender;
